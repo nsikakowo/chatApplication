@@ -18,7 +18,7 @@ const Login = () => {
 
             window.location.reload();
         } catch (error) {
-            seterror('invalid Username or Password');
+            seterror('Invalid Username or Password');
         }
     }
 
@@ -30,7 +30,7 @@ const Login = () => {
                 <input type="text" value={username} onChange={(e) => setusername(e.target.value)} className='input' placeholder='Username' required/>
                 <input type="password" value={password} onChange={(e) => setpassword(e.target.value)} className='input' placeholder='Password' required/>
                 <div align='center'>
-                    <button type='submit' className='button'> Login</button>
+                    <button type='submit' className='button'> Get me in</button>
                 </div>
                 <h2 className="error">{error}</h2>
             </form>

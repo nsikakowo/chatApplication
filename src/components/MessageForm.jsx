@@ -38,7 +38,7 @@ const MessageForm = (props) => {
         onSubmit={handleSubmit}
         />
         <label htmlFor="upload-button">
-            <span className='image-button'>
+            <span className='image-button' style={{color:"whitesmoke"}}>
                 <PictureOutlined className='picture-icon'/>
             </span>
         </label>
@@ -49,7 +49,7 @@ const MessageForm = (props) => {
             style={{display:"none"}}
             onChange={handleUpload}
          />
-         <button type="submit" className='send-button'>
+         <button type="submit" className='send-button' style={{color:"whitesmoke"}}>
              <SendOutlined className='send-icon' />
          </button>
     </form>
